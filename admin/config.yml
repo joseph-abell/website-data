@@ -119,6 +119,9 @@ collections:
         displayFields:
           - "authors.*.name"
         valueField: "authors.*.slug"
+      - label: Category
+        name: category
+        widget: string
       - label: Tags
         label_singular: "Tag"
         name: "tags"
