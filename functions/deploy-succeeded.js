@@ -1,4 +1,4 @@
-import https from 'https';
+const https = require('https');
 
 exports.handler = async (event, context) => {
     console.info('Deploy Succeeded')
