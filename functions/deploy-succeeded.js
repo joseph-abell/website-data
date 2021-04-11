@@ -8,6 +8,18 @@ exports.handler = async (event, context) => {
     const {data} = await axios(url)
     const { files } = data;
     files && files.filter(file => file.filename.includes('.mdx')).map(file => {
-        console.log(file.status);
+        switch (file.status) {
+            case "added":
+                console.log('added', file.filename);
+                break;
+            case "removed":
+                console.log('removed', file.filename);
+                break;
+            case "modified":
+                console.log('modified', file.filename);
+                break;
+            default:
+                return;
+        }
     })
 }
