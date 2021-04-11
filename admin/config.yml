@@ -106,6 +106,10 @@ collections:
         format: "YYYY-MM-DD"
         dateFormat: "YYYY-MM-DD"
         timeFormat: false
+      - label: Image
+        name: image
+        widget: image
+        required: false
       - label: Author
         name: "author"
         widget: relation
