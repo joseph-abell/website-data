@@ -7,7 +7,7 @@ exports.handler = async (event, context) => {
     const url = `https://api.github.com/repos/joseph-abell/website-data/commits/${commitRef}`;
     const {data} = await axios(url)
     const { files } = data;
-    files && files.filter(file => file.fileName.includes('.mdx')).map(file => {
+    files && files.filter(file => file.filename.includes('.mdx')).map(file => {
         console.log(file.status);
     })
 }
