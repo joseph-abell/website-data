@@ -1,5 +1,5 @@
 const axios = require('axios');
-const AWSAppSyncClient = require('aws-appsync')
+const AWSAppSyncClient = require('aws-appsync');
 
 exports.handler = async (event, context) => {
     console.info('Deploy Succeeded')
