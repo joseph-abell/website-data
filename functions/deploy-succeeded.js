@@ -9,7 +9,7 @@ exports.handler = async (event, context) => {
     const {data} = await axios(url)
     console.log(url)
     const { files } = data;
-    files?.map(file => {
+    files && files.map(file => {
         console.log(file);
     })
 }
