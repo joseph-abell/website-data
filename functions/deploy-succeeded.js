@@ -1,5 +1,6 @@
 exports.handler = async (event, context) => {
     console.info('Deploy Succeeded')
     const body = JSON.parse(event.body);
-    console.log(body.payload);
+    const commitRef = body.payload.commitRef;
+    console.log('Commit Ref:', commitRef);
 }
