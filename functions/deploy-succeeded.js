@@ -3,4 +3,5 @@ exports.handler = async (event, context) => {
     const body = JSON.parse(event.body);
     const commitRef = body.payload.commitRef;
     console.log('Commit Ref:', commitRef);
+    console.log(process.env.GITHUB_API_KEY);
 }
