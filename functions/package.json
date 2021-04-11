@@ -12,5 +12,8 @@
   "dependencies": {
     "aws-appsync": "^4.0.3",
     "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "@react-native-community/async-storage": "^1.12.1"
   }
 }
