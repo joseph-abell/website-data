@@ -1,4 +1,5 @@
 exports.handler = async (event, context) => {
     console.info('Deploy Succeeded')
-    console.log(event.body.payload);
+    const body = JSON.parse(event.body);
+    console.log(body.payload);
 }
