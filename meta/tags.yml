@@ -1,13 +1,13 @@
 tags:
-  - slug: document
-    name: document
-  - slug: mock
-    name: mock
-  - slug: style
-    name: style
-  - slug: license
-    name: license
-  - slug: mdx
-    name: mdx
-  - slug: markdown
-    name: markdown
+  - slug: development
+    name: development
+  - slug: react
+    name: react
+  - slug: typescript
+    name: typescript
+  - slug: electronics
+    name: electronics
+  - slug: aws
+    name: aws
+  - slug: dynamodb
+    name: dynamodb
